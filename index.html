@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>賴耀嘉｜攝氏零度影像設計 — 把瞬間，凝結成永恆</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="賴耀嘉｜攝氏零度影像設計 — 把瞬間，凝結成永恆">
+    <meta property="og:description" content="賴耀嘉（James Lai），攝氏零度影像設計創辦人兼商業攝影師。商業攝影、活動紀錄、人像攝影、寵物寫真，以自然元素、光線與構圖，透過影像傳達情感和故事。">
+    <meta property="og:image" content="https://event.bymyway.com/curated/lai-yaojia/images/IMG-001.webp">
+<meta name="description" content="賴耀嘉（James Lai），攝氏零度影像設計創辦人兼商業攝影師。商業攝影、活動紀錄、人像攝影、寵物寫真，以自然元素、光線與構圖，透過影像傳達情感和故事。">
+<meta name="theme-color" content="#0d0d0f">
+<style>
+:root{
+  --ink:#0d0d0f; --ink2:#161619; --ink3:#1e1e22;
+  --paper:#f4f1ea; --paper2:#ebe7dc;
+  --gold:#d9a441; --gold2:#eec97a; --gold-dim:rgba(217,164,65,.38);
+  --txt:#f2efe8; --txt-dim:#b9b4a8; --txt-dark:#232320; --txt-dark-dim:#6f6a5e;
+  --line:rgba(244,241,234,.14); --line-dark:rgba(35,35,32,.16);
+  --serif:"Noto Serif TC","Songti TC",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--txt);font-family:var(--sans);font-size:20px;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+::selection{background:var(--gold);color:#111}
+h1,h2,h3{text-wrap:balance;line-height:1.25}
+.kicker{font-size:20px;letter-spacing:.32em;color:var(--gold2);font-weight:700}
+.kicker::before{content:"";display:inline-block;width:34px;height:2px;background:var(--gold);vertical-align:middle;margin-right:14px}
+.sec-title{font-size:clamp(36px,4.6vw,54px);font-weight:900;letter-spacing:.04em;margin:14px 0 10px}
+.sec-sub{font-size:21px;color:var(--txt-dim);max-width:760px}
+.paper .sec-sub{color:var(--txt-dark-dim)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+section{padding:104px 0;position:relative}
+.paper{background:var(--paper);color:var(--txt-dark)}
+.paper .kicker{color:#a87e28}
+.paper .kicker::before{background:#a87e28}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:200;background:rgba(13,13,15,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1240px;margin:0 auto;padding:0 28px;height:68px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;white-space:nowrap}
+.brand .deg{font-size:26px;font-weight:900;color:var(--gold2);letter-spacing:.02em}
+.brand .name{font-size:21px;font-weight:800;letter-spacing:.14em}
+.nav-links{display:flex;gap:26px;margin-left:auto}
+.nav-links a{font-size:20px;text-decoration:none;color:var(--txt-dim);padding:6px 2px;border-bottom:2px solid transparent}
+.nav-links a:hover{color:var(--txt);border-color:var(--gold)}
+.nav-cta{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:20px;font-weight:700;text-decoration:none;padding:12px 26px;border-radius:999px;border:2px solid var(--gold);transition:transform .18s,background .18s,color .18s;cursor:pointer;white-space:nowrap}
+.btn-gold{background:var(--gold);color:#141414}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--txt)}
+.btn-ghost:hover{background:rgba(217,164,65,.14);transform:translateY(-2px)}
+.btn-sm{padding:8px 18px;font-size:20px}
+.burger{display:none;margin-left:auto;background:none;border:0;color:var(--txt);font-size:30px;cursor:pointer;padding:6px}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;align-items:center;padding:150px 0 90px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.34;filter:saturate(.7)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(13,13,15,.94) 30%,rgba(13,13,15,.55) 62%,rgba(13,13,15,.88) 100%)}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center;width:100%}
+.hero h1{font-size:clamp(64px,8.4vw,116px);font-weight:900;letter-spacing:.06em;line-height:1.05}
+.hero .en{font-size:clamp(24px,2.6vw,32px);letter-spacing:.42em;color:var(--gold2);font-weight:700;margin-top:8px}
+.hero .roles{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+.role{font-size:20px;font-weight:700;padding:9px 18px;border:1px solid var(--gold-dim);border-radius:999px;background:rgba(217,164,65,.08)}
+.hero .tagline{font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);font-weight:700;letter-spacing:.08em;margin-top:34px;color:var(--txt)}
+.hero .tagline em{font-style:normal;color:var(--gold2)}
+.hero .lead{margin-top:16px;font-size:21px;color:var(--txt-dim);max-width:560px}
+.hero .cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+.viewfinder{position:relative;justify-self:end;width:min(480px,100%)}
+.vf-frame{position:relative;border:1px solid var(--gold-dim);padding:14px;background:rgba(22,22,25,.6)}
+.vf-frame img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.vf-corner{position:absolute;width:34px;height:34px;border:3px solid var(--gold2);z-index:2}
+.vf-corner.tl{top:-3px;left:-3px;border-right:0;border-bottom:0}
+.vf-corner.tr{top:-3px;right:-3px;border-left:0;border-bottom:0}
+.vf-corner.bl{bottom:-3px;left:-3px;border-right:0;border-top:0}
+.vf-corner.br{bottom:-3px;right:-3px;border-left:0;border-top:0}
+.vf-focus{position:absolute;left:50%;top:38%;width:74px;height:74px;transform:translate(-50%,-50%);border:1.5px solid rgba(238,201,122,.85);border-radius:50%;z-index:2;pointer-events:none;animation:focusPulse 3.2s ease-in-out infinite}
+.vf-focus::after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;background:var(--gold2);border-radius:50%;transform:translate(-50%,-50%)}
+@keyframes focusPulse{0%,100%{opacity:.55;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}}
+.vf-meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:20px;color:var(--txt-dim);letter-spacing:.12em}
+.vf-meta .zero{color:var(--gold2);font-weight:900;font-size:24px;letter-spacing:.05em}
+.vf-intro .vf-corner{animation:vfIn .9s cubic-bezier(.2,.8,.2,1) both}
+.vf-intro .vf-corner.tr{animation-delay:.12s}.vf-intro .vf-corner.bl{animation-delay:.24s}.vf-intro .vf-corner.br{animation-delay:.36s}
+@keyframes vfIn{from{opacity:0;transform:scale(1.6)}to{opacity:1;transform:scale(1)}}
+.scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:1;font-size:20px;letter-spacing:.3em;color:var(--txt-dim);animation:hintFloat 2.4s ease-in-out infinite}
+@keyframes hintFloat{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* ---------- numbers ---------- */
+.numbers{padding:72px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink2)}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.num{text-align:center;padding:10px 8px}
+.num .n{font-size:clamp(52px,5.6vw,72px);font-weight:900;color:var(--gold2);line-height:1.1;font-variant-numeric:tabular-nums}
+.num .n small{font-size:.55em;font-weight:800}
+.num .t{font-size:21px;font-weight:700;margin-top:8px}
+.num .d{font-size:20px;color:var(--txt-dim);margin-top:4px;line-height:1.6}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 380px;gap:56px;margin-top:44px;align-items:start}
+.about-lead{font-size:23px;line-height:1.9}
+.about-lead strong{color:#8a6a1d}
+.about-quote{margin-top:26px;border-left:4px solid var(--gold);padding:6px 0 6px 22px;font-family:var(--serif);font-size:23px;line-height:1.85;color:#3d3a32}
+.about-quote cite{display:block;font-family:var(--sans);font-style:normal;font-size:20px;color:var(--txt-dark-dim);margin-top:10px}
+.about-img{border:1px solid var(--line-dark);padding:12px;background:#fff}
+.about-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-img figcaption{font-size:20px;color:var(--txt-dark-dim);margin-top:10px;text-align:center}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:52px}
+.fcol{border-top:3px solid var(--gold);background:#fff;padding:26px 24px;min-height:230px}
+.fcol h3{font-size:23px;font-weight:900;letter-spacing:.06em;margin-bottom:12px}
+.fcol p,.fcol li{font-size:20px;line-height:1.7;color:#4a463c}
+.fcol ul{list-style:none}
+.fcol li{padding-left:16px;position:relative;margin-bottom:8px}
+.fcol li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;background:var(--gold);border-radius:50%}
+.fcol .yr{font-weight:800;color:#8a6a1d}
+.moments{margin-top:52px}
+.moments h3{font-size:23px;font-weight:900;letter-spacing:.06em;margin-bottom:18px}
+.moment-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.moment{border:1px solid var(--line-dark);padding:12px;background:#fff}
+.moment img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.moment figcaption{font-size:20px;color:var(--txt-dark-dim);margin-top:10px;line-height:1.55}
+.moment figcaption b{color:var(--txt-dark)}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:22px;margin-top:44px}
+.svc-card{border:1px solid var(--line);background:var(--ink2);overflow:hidden;display:flex;flex-direction:column}
+.svc-card.big{grid-row:span 2}
+.svc-card img{width:100%;object-fit:cover}
+.svc-card.big img{aspect-ratio:4/3}
+.svc-card:not(.big) img{aspect-ratio:16/10}
+.svc-body{padding:24px 26px 28px}
+.svc-body h3{font-size:25px;font-weight:900;letter-spacing:.04em}
+.svc-body h3 span{color:var(--gold2);font-size:20px;letter-spacing:.2em;display:block;margin-bottom:6px;font-weight:700}
+.svc-body p{font-size:20px;color:var(--txt-dim);margin-top:10px;line-height:1.7}
+.svc-body .note{margin-top:14px;font-size:20px;color:var(--gold2)}
+/* laser card */
+.laser{margin-top:56px;border:1px solid var(--gold-dim);background:var(--ink2);padding:26px}
+.laser h3{font-size:25px;font-weight:900;letter-spacing:.04em}
+.laser h3 span{color:var(--gold2);font-size:20px;letter-spacing:.2em;display:block;margin-bottom:6px;font-weight:700}
+.laser .laser-sub{font-size:20px;color:var(--txt-dim);margin-top:8px}
+.laser-stage{position:relative;margin-top:20px}
+.laser-stage img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.hotspot{position:absolute;width:44px;height:44px;border-radius:50%;border:2px solid var(--gold2);background:rgba(13,13,15,.55);color:var(--gold2);font-size:21px;font-weight:900;cursor:pointer;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;transition:background .18s,color .18s;z-index:3}
+.hotspot::after{content:"";position:absolute;inset:-9px;border:1px solid rgba(238,201,122,.5);border-radius:50%;animation:hsPulse 2.4s ease-out infinite}
+@keyframes hsPulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(1.25);opacity:0}}
+.hotspot.active,.hotspot:hover{background:var(--gold);color:#141414}
+.laser-note{margin-top:18px;border-left:4px solid var(--gold);padding:8px 0 8px 20px;min-height:76px}
+.laser-note b{font-size:22px}
+.laser-note p{font-size:20px;color:var(--txt-dim);margin-top:4px}
+.laser-note .src{font-size:20px;color:var(--txt-dim);margin-top:10px}
+
+/* ---------- timeline ---------- */
+.tl-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;margin-top:44px;align-items:start}
+.timeline{list-style:none;position:relative;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold),rgba(217,164,65,.15))}
+.tl-item{position:relative;padding:0 0 40px 22px;opacity:.28;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.tl-item.on{opacity:1;transform:none}
+.tl-item::before{content:"";position:absolute;left:-34px;top:8px;width:18px;height:18px;border-radius:50%;background:var(--paper);border:4px solid var(--gold)}
+.tl-item .yr{font-size:22px;font-weight:900;color:#8a6a1d;letter-spacing:.08em}
+.tl-item h3{font-size:25px;font-weight:900;margin:6px 0 8px}
+.tl-item p{font-size:20px;color:#4a463c;line-height:1.7}
+.tl-side{position:sticky;top:96px}
+.tl-side .about-img{margin-bottom:22px}
+.quote-card{background:#1c1c1f;color:var(--txt);padding:30px 30px 26px;border:1px solid var(--gold-dim)}
+.quote-card p{font-family:var(--serif);font-size:25px;line-height:1.8}
+.quote-card cite{display:block;font-family:var(--sans);font-style:normal;font-size:20px;color:var(--txt-dim);margin-top:14px}
+
+/* ---------- break ---------- */
+.break{padding:0;position:relative}
+.break img{width:100%;height:min(72vh,620px);object-fit:cover;filter:saturate(.85)}
+.break .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.25),rgba(13,13,15,.72));display:flex;align-items:flex-end}
+.break .overlay-in{max-width:1240px;margin:0 auto;padding:0 28px 52px;width:100%}
+.break blockquote{font-family:var(--serif);font-size:clamp(28px,3.4vw,42px);font-weight:700;line-height:1.5;max-width:820px;text-shadow:0 2px 18px rgba(0,0,0,.5)}
+.break .cap{font-size:20px;color:rgba(244,241,234,.85);margin-top:14px}
+
+/* ---------- gallery ---------- */
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.gal-item{border:1px solid var(--line);background:var(--ink2);cursor:pointer;padding:12px;transition:border-color .2s,transform .2s}
+.gal-item:hover{border-color:var(--gold);transform:translateY(-3px)}
+.gal-item img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gal-item figcaption{font-size:20px;color:var(--txt-dim);margin-top:12px;line-height:1.55}
+.gal-item figcaption b{color:var(--txt);display:block;font-size:21px}
+.gal-item .tag{display:inline-block;font-size:20px;font-weight:700;color:var(--gold2);border:1px solid var(--gold-dim);border-radius:999px;padding:3px 14px;margin-bottom:8px}
+.lightbox{position:fixed;inset:0;z-index:400;background:rgba(8,8,9,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:28px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1100px,94vw);max-height:76vh;object-fit:contain;border:1px solid var(--gold-dim)}
+.lb-cap{font-size:21px;margin-top:16px;text-align:center;max-width:820px}
+.lb-btns{position:absolute;top:50%;left:0;right:0;display:flex;justify-content:space-between;padding:0 18px;transform:translateY(-50%);pointer-events:none}
+.lb-btns button{pointer-events:auto;width:56px;height:56px;border-radius:50%;border:2px solid var(--gold2);background:rgba(13,13,15,.6);color:var(--gold2);font-size:28px;cursor:pointer}
+.lb-close{position:absolute;top:20px;right:24px;background:none;border:2px solid var(--gold2);color:var(--gold2);width:52px;height:52px;border-radius:50%;font-size:26px;cursor:pointer}
+.lb-count{position:absolute;top:30px;left:28px;font-size:20px;color:var(--txt-dim);letter-spacing:.14em}
+
+/* ---------- media ---------- */
+.media-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;margin-top:44px;align-items:start}
+.media-list{list-style:none}
+.media-item{border-top:1px solid var(--line-dark);padding:26px 4px}
+.media-item:last-child{border-bottom:1px solid var(--line-dark)}
+.media-item .src{font-size:20px;font-weight:800;letter-spacing:.12em;color:#8a6a1d}
+.media-item h3{font-size:25px;font-weight:900;margin:8px 0}
+.media-item p{font-size:20px;color:#4a463c;line-height:1.7}
+.media-item a.more{display:inline-block;margin-top:12px;font-size:20px;font-weight:700;color:#8a6a1d;text-decoration:none;border-bottom:2px solid var(--gold)}
+.media-item a.more:hover{color:#6d5a16}
+
+/* ---------- contact ---------- */
+.contact{border-top:1px solid var(--line);text-align:center}
+.contact .sec-sub{margin:0 auto}
+.contact-btns{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:38px}
+.contact-info{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;text-align:left}
+.cinfo{border:1px solid var(--line);background:var(--ink2);padding:26px}
+.cinfo h3{font-size:21px;font-weight:900;letter-spacing:.1em;color:var(--gold2);margin-bottom:10px}
+.cinfo p{font-size:20px;color:var(--txt-dim);line-height:1.7;overflow-wrap:anywhere}
+.cinfo a{color:var(--txt);text-decoration:none;border-bottom:1px solid var(--gold-dim)}
+.zero-mark{margin:64px auto 0;font-size:20px;letter-spacing:.5em;color:var(--txt-dim)}
+.zero-mark b{display:block;font-size:76px;letter-spacing:.02em;color:var(--gold2);line-height:1.1}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:44px 0 54px;background:#0a0a0b}
+.foot-links{display:flex;flex-wrap:wrap;gap:14px 34px;justify-content:center}
+.foot-links a{font-size:20px;color:var(--txt-dim);text-decoration:none;border-bottom:1px solid transparent}
+.foot-links a:hover{color:var(--gold2);border-color:var(--gold)}
+.foot-copy{text-align:center;font-size:20px;color:#7d786c;margin-top:22px}
+
+/* ---------- side dots / top / pen / curtain ---------- */
+.dots{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:150;display:flex;flex-direction:column;gap:14px}
+.dots a{width:12px;height:12px;border-radius:50%;background:rgba(244,241,234,.35);border:1px solid rgba(217,164,65,.5);display:block}
+.dots a.on{background:var(--gold)}
+.to-top{position:fixed;right:20px;bottom:24px;z-index:150;width:54px;height:54px;border-radius:50%;border:2px solid var(--gold);background:rgba(13,13,15,.85);color:var(--gold2);font-size:24px;cursor:pointer;display:none}
+.to-top.show{display:block}
+.pen-fab{position:fixed;right:20px;bottom:92px;z-index:150;border:2px solid var(--gold);background:rgba(13,13,15,.88);color:var(--gold2);font-size:20px;font-weight:700;padding:12px 20px;border-radius:999px;cursor:pointer}
+#penCanvas{position:fixed;inset:0;z-index:300;display:none;touch-action:none;cursor:crosshair}
+#penCanvas.on{display:block}
+.pen-bar{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:301;display:none;gap:10px;background:rgba(13,13,15,.92);border:1px solid var(--gold-dim);border-radius:999px;padding:10px 14px}
+.pen-bar.on{display:flex}
+.pen-bar button{font-size:20px;font-weight:700;background:none;border:1px solid var(--gold-dim);color:var(--txt);border-radius:999px;padding:8px 18px;cursor:pointer}
+.pen-bar button:hover{border-color:var(--gold)}
+.curtain{position:fixed;inset:0;z-index:500;background:var(--ink);transform:scaleY(0);transform-origin:top;pointer-events:none}
+.curtain.go{animation:curtainGo .7s ease-in-out}
+@keyframes curtainGo{0%{transform:scaleY(0);transform-origin:top}45%,55%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- rise ---------- */
+.rise{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rise.on{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .hero-in{grid-template-columns:1fr;gap:44px}
+  .viewfinder{justify-self:start}
+  .num-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.tl-layout,.media-layout{grid-template-columns:1fr}
+  .tl-side{position:static}
+  .four-col{grid-template-columns:repeat(2,1fr)}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc-card.big{grid-column:span 2;grid-row:auto}
+  .gal-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-info{grid-template-columns:1fr}
+  .dots{display:none}
+}
+@media (max-width:640px){
+  body{font-size:20px}
+  section{padding:76px 0}
+  .wrap{padding:0 20px}
+  .nav-links,.nav-cta{display:none}
+  .nav-links.open{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:#111;padding:18px 28px;gap:14px;border-bottom:1px solid var(--line)}
+  .burger{display:block}
+  .moment-row{grid-template-columns:1fr}
+  .four-col{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-card.big{grid-column:auto}
+  .gal-grid{grid-template-columns:1fr}
+  .num-grid{grid-template-columns:repeat(2,1fr);gap:18px}
+  .laser{padding:18px}
+  .laser-stage img{aspect-ratio:4/3}
+  .hero{padding-top:120px}
+  .scroll-hint{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body id="top">
+<div class="curtain" id="curtain" aria-hidden="true"></div>
+
+<nav class="nav" aria-label="主導覽">
+  <div class="nav-in">
+    <a class="brand" href="#top" data-nav><span class="deg">0°</span><span class="name">攝氏零度影像設計</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-nav>關於</a>
+      <a href="#services" data-nav>專長</a>
+      <a href="#story" data-nav>故事</a>
+      <a href="#works" data-nav>作品</a>
+      <a href="#media" data-nav>媒體</a>
+      <a href="#contact" data-nav>聯絡</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="https://www.facebook.com/jameslai0709" target="_blank" rel="noopener">FB 粉專</a>
+      <a class="btn btn-gold btn-sm" href="https://www.instagram.com/jameslai0709/" target="_blank" rel="noopener">IG 作品</a>
+    </div>
+    <button class="burger" id="burger" aria-label="開啟選單">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true"><img src="images/IMG-001.webp" alt="" width="1000" height="667" fetchpriority="high"></div>
+  <div class="wrap hero-in">
+    <div>
+      <p class="kicker">攝氏零度影像設計 · ZERO DEGREE</p>
+      <h1>賴耀嘉</h1>
+      <p class="en">JAMES LAI</p>
+      <div class="roles">
+        <span class="role">創辦人 兼 商業攝影師</span>
+        <span class="role">BNI 威鋒分會 人像攝影代表</span>
+      </div>
+      <p class="tagline">把瞬間，<em>凝結成永恆。</em></p>
+      <p class="lead">攝氏零度，是水凝固成冰的溫度。快門按下的那一秒，時間也被凝結——光線、神情、故事，從此不再流走。</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="https://www.facebook.com/jameslai0709" target="_blank" rel="noopener">FB 粉絲專頁</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/jameslai0709/" target="_blank" rel="noopener">IG 作品集</a>
+      </div>
+    </div>
+    <div class="viewfinder vf-intro" id="vfBox">
+      <div class="vf-frame" id="vfFrame">
+        <span class="vf-corner tl"></span><span class="vf-corner tr"></span>
+        <span class="vf-corner bl"></span><span class="vf-corner br"></span>
+        <span class="vf-focus" aria-hidden="true"></span>
+        <img src="images/photo-hero.webp" alt="賴耀嘉肖像：穿米色西裝坐在皮椅上，雙手交握，直視鏡頭" width="640" height="640" fetchpriority="high" data-slot="hero-portrait">
+      </div>
+      <div class="vf-meta"><span>PORTRAIT · TAICHUNG</span><span class="zero">0°</span></div>
+    </div>
+  </div>
+  <p class="scroll-hint">SCROLL ↓</p>
+</header>
+
+<section class="numbers" aria-label="重點數字">
+  <div class="wrap num-grid">
+    <div class="num"><p class="n"><span class="count" data-from="2000" data-to="2018">2018</span></p><p class="t">創立年份</p><p class="d">攝氏零度影像設計，於台中霧峰設立</p></div>
+    <div class="num"><p class="n"><span class="count" data-from="0" data-to="8">8</span><small>+</small></p><p class="t">年深耕影像</p><p class="d">自 2018 年起，以攝影為業</p></div>
+    <div class="num"><p class="n"><span class="count" data-from="0" data-to="4">4</span></p><p class="t">大攝影服務</p><p class="d">商業 · 活動 · 人像 · 寵物寫真</p></div>
+    <div class="num"><p class="n"><span class="count" data-from="0" data-to="2">2</span></p><p class="t">間影像事業</p><p class="d">攝氏零度 ＋ 詹姆士國際</p></div>
+  </div>
+</section>
+
+<section class="paper" id="about">
+  <div class="wrap">
+    <p class="kicker rise">關於耀嘉</p>
+    <h2 class="sec-title rise">一位把時間凝結成影像的中年大叔</h2>
+    <div class="about-grid">
+      <div>
+        <p class="about-lead rise">賴耀嘉是<strong>攝氏零度影像設計</strong>的創辦人，也是第一線的商業攝影師。他喜歡將自然元素融入作品，注重光線和構圖，相信攝影不僅是拍照，更是藝術創作和表達方式——透過影像傳達情感和故事。</p>
+        <blockquote class="about-quote rise">一位喜好攝影，擅長捕捉生活中美好瞬間的中年大叔。
+          <cite>—— 賴耀嘉 FB 粉絲專頁自介</cite>
+        </blockquote>
+      </div>
+      <figure class="about-img rise">
+        <img src="images/IMG-002.webp" alt="概念圖：攝影棚內，商品在柔光箱下拍攝，攝影師剪影在旁調整燈光" width="1000" height="667" loading="lazy" data-slot="IMG-002">
+        <figcaption>概念圖 · 棚內拍攝現場</figcaption>
+      </figure>
+    </div>
+    <div class="four-col">
+      <div class="fcol rise">
+        <h3>現職</h3>
+        <ul>
+          <li>攝氏零度影像設計 創辦人兼商業攝影師</li>
+          <li>詹姆士國際有限公司 負責人</li>
+          <li>BNI 威鋒分會 人像攝影代表</li>
+        </ul>
+      </div>
+      <div class="fcol rise">
+        <h3>經歷</h3>
+        <ul>
+          <li><span class="yr">2018</span> 創立攝氏零度影像設計</li>
+          <li><span class="yr">2025</span> 成立詹姆士國際有限公司</li>
+          <li><span class="yr">2025</span> 台中市區產業博覽會參展</li>
+          <li><span class="yr">2026</span> BNI 威鋒分會寵物寫真專題演講</li>
+        </ul>
+      </div>
+      <div class="fcol rise">
+        <h3>合作網絡</h3>
+        <p>與視覺設計、動態攝影等行銷產業夥伴合作，從平面攝影到動態影像，提供一條龍整合服務。</p>
+      </div>
+      <div class="fcol rise">
+        <h3>攝影信念</h3>
+        <p>自然元素、光線、構圖，三者缺一不可。拍的不只是畫面，更是畫面裡的情感和故事。</p>
+      </div>
+    </div>
+    <div class="moments">
+      <h3 class="rise">重要時刻</h3>
+      <div class="moment-row">
+        <figure class="moment rise">
+          <img src="images/photo-photographer.webp" alt="黑白照片：賴耀嘉坐在斑駁磚牆前，手持相機低頭檢視" width="666" height="1000" loading="lazy" data-slot="photo-photographer" style="object-position:50% 18%">
+          <figcaption><b>攝影師身影</b><br>FB 粉絲專頁大頭貼，黑白人像</figcaption>
+        </figure>
+        <figure class="moment rise">
+          <img src="images/photo-bni-poster.webp" alt="BNI 威鋒分會寵物寫真專題演講海報，上有賴耀嘉肖像與商業九宮格" width="800" height="1000" loading="lazy" data-slot="photo-bni-poster">
+          <figcaption><b>BNI 威鋒分會演講海報</b><br>2026 年 1 月，寵物寫真專題演講</figcaption>
+        </figure>
+        <figure class="moment rise">
+          <img src="images/photo-badminton-03.webp" alt="第二屆羽動傑人盃大合照，選手們在橫幅前手持獎盃合影" width="1000" height="667" loading="lazy" data-slot="photo-badminton-03">
+          <figcaption><b>第二屆羽動傑人盃</b><br>2026 年 8 月，活動紀錄大合照</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kicker rise">專長</p>
+    <h2 class="sec-title rise">四種凝結時間的方式，再加一條龍</h2>
+    <p class="sec-sub rise">從商品到人物，從典禮到毛小孩——每一種拍攝，都是把不會重來的那一秒留下來。</p>
+    <div class="svc-grid">
+      <article class="svc-card big rise">
+        <img src="images/photo-commercial.webp" alt="商業攝影作品：燭光下木桌上的三瓶保養品，暖黃光線" width="640" height="427" loading="lazy" data-slot="photo-commercial">
+        <div class="svc-body">
+          <h3><span>COMMERCIAL</span>商業攝影</h3>
+          <p>產品、品牌與空間攝影。用光線說出商品的故事，讓每一件產品都有自己的神情。</p>
+          <p>從燭光下的保養品，到簡約風格的臥室空間，商業攝影的每一張，都在替品牌說故事。</p>
+          <p class="note">拍攝範圍：產品 · 品牌形象 · 空間場景<br>圖為 IG 作品：燭光下的保養品（2025 年 9 月）</p>
+        </div>
+      </article>
+      <article class="svc-card rise">
+        <img src="images/IMG-003.webp" alt="概念圖：典禮會場，觀眾剪影與舞台上的一道金色光束、彩紙飛揚" width="1000" height="667" loading="lazy" data-slot="IMG-003">
+        <div class="svc-body">
+          <h3><span>EVENT</span>活動紀錄</h3>
+          <p>社團交接、典禮活動、賽事紀錄，全程跟拍，不錯過任何關鍵一刻。</p>
+        </div>
+      </article>
+      <article class="svc-card rise">
+        <img src="images/IMG-004.webp" alt="概念圖：窗光下的人像剪影，薄紗窗簾透著暖金色光" width="667" height="1000" loading="lazy" data-slot="IMG-004">
+        <div class="svc-body">
+          <h3><span>PORTRAIT</span>人像攝影</h3>
+          <p>自然光與構圖，拍出人物最真實的神情。</p>
+        </div>
+      </article>
+      <article class="svc-card rise">
+        <img src="images/IMG-005.webp" alt="概念圖：清晨草地上的金毛犬剪影，望向暖金色日出" width="1000" height="667" loading="lazy" data-slot="IMG-005">
+        <div class="svc-body">
+          <h3><span>PET</span>寵物寫真</h3>
+          <p>把陪伴，變成可以永遠保存的模樣。</p>
+        </div>
+      </article>
+      <article class="svc-card rise">
+        <img src="images/IMG-008.webp" alt="概念圖：創作桌面俯視，相機、筆電、色卡與鏡頭整齊排列" width="1000" height="667" loading="lazy" data-slot="IMG-008">
+        <div class="svc-body">
+          <h3><span>ONE-STOP</span>一條龍整合</h3>
+          <p>串連視覺設計與動態攝影夥伴，從平面到影片一次到位。</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="laser rise">
+      <h3><span>ANATOMY OF A SHOT</span>一張照片的拆解：扣殺的那一秒</h3>
+      <p class="laser-sub">點選照片上的編號，看賴耀嘉在這一按快門裡照顧到的事。</p>
+      <div class="laser-stage">
+        <img id="laserImg" src="images/photo-badminton-08.webp" alt="活動紀錄照片：羽球選手騰空扣殺，另一名選手在後方，背景為觀眾席" width="1000" height="667" loading="lazy" data-slot="photo-badminton-08">
+        <button class="hotspot active" style="left:61%;top:26%" data-note="0" aria-label="亮點 1：凝結的瞬間">1</button>
+        <button class="hotspot" style="left:58%;top:52%" data-note="1" aria-label="亮點 2：追焦的動態">2</button>
+        <button class="hotspot" style="left:22%;top:18%" data-note="2" aria-label="亮點 3：現場光線">3</button>
+        <button class="hotspot" style="left:82%;top:72%" data-note="3" aria-label="亮點 4：構圖留白">4</button>
+      </div>
+      <div class="laser-note" id="laserNote" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="paper" id="story">
+  <div class="wrap">
+    <p class="kicker rise">故事</p>
+    <h2 class="sec-title rise">從一間工作室，到兩間公司</h2>
+    <div class="tl-layout">
+      <ol class="timeline" id="timeline">
+        <li class="tl-item">
+          <p class="yr">2018 · 03</p>
+          <h3>創立攝氏零度影像設計</h3>
+          <p>在台中霧峰設立，以攝影為業。名字取自水的凝固點——攝氏零度，快門按下的那一秒，時間就此凝結。</p>
+        </li>
+        <li class="tl-item">
+          <p class="yr">2025 · 03</p>
+          <h3>成立詹姆士國際有限公司</h3>
+          <p>在同一地址設立第二間公司，事業版圖再擴一間，攝影服務之外，開展更多可能。</p>
+        </li>
+        <li class="tl-item">
+          <p class="yr">2025 · 11</p>
+          <h3>台中市區產業博覽會參展</h3>
+          <p>BNI 台中市區辦公室主辦，於台中世貿展出，攝氏零度影像設計列名參展廠商。</p>
+        </li>
+        <li class="tl-item">
+          <p class="yr">2026 · 01</p>
+          <h3>BNI 威鋒分會專題演講</h3>
+          <p>以人像攝影代表身分主講「寵物寫真：把『陪伴』變成可以永遠保存的模樣」，與寵物產業夥伴對接商機。</p>
+        </li>
+        <li class="tl-item">
+          <p class="yr">2026 · 08</p>
+          <h3>第二屆羽動傑人盃活動紀錄</h3>
+          <p>為台中市時代青年國際傑人會的羽球賽事做全程影像紀錄，留下 28 張以上的賽事與合影紀錄。</p>
+        </li>
+      </ol>
+      <aside class="tl-side">
+        <figure class="about-img rise">
+          <img src="images/IMG-006.webp" alt="概念圖：清晨層疊山脊與雲海，一道暖金色陽光穿破雲層" width="1000" height="667" loading="lazy" data-slot="IMG-006">
+          <figcaption>概念圖 · 自然元素與光線</figcaption>
+        </figure>
+        <div class="quote-card rise">
+          <p>「攝影不僅是拍照，更是藝術創作和表達方式，透過影像傳達情感和故事。」</p>
+          <cite>—— 賴耀嘉自介</cite>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="break" aria-label="攝影作品：台北 101">
+  <img src="images/photo-taipei101.webp" alt="黑白照片：從山上岩石望向台北 101，兩人坐在岩石上眺望" width="1000" height="667" loading="lazy" data-slot="photo-taipei101">
+  <div class="overlay">
+    <div class="overlay-in">
+      <blockquote>「喜歡將自然元素融入作品中，注重光線和構圖。」</blockquote>
+      <p class="cap">台北 101 · 攝影：賴耀嘉（FB 粉絲專頁封面照片）</p>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <p class="kicker rise">作品選</p>
+    <h2 class="sec-title rise">快門按下的那些瞬間</h2>
+    <p class="sec-sub rise">以下皆為賴耀嘉公開發表的實際作品，點選可放大查看。更多作品請見 FB 粉絲專頁與 IG。</p>
+    <div class="gal-grid" id="galGrid">
+      <figure class="gal-item rise" data-cap="活動紀錄 · 第二屆羽動傑人盃：女選手揮拍，羽球正在空中">
+        <img src="images/photo-badminton-01.webp" alt="羽球女選手穿黑衣戴白頭帶，在綠色球場揮拍" width="667" height="1000" loading="lazy" data-slot="photo-badminton-01">
+        <figcaption><span class="tag">活動紀錄</span><b>羽動傑人盃 · 揮拍</b>女選手的擊球瞬間</figcaption>
+      </figure>
+      <figure class="gal-item rise" data-cap="活動紀錄 · 第二屆羽動傑人盃：年輕選手高舉橘色球拍">
+        <img src="images/photo-badminton-05.webp" alt="年輕羽球男選手穿黑衣白短褲，高舉橘色球拍" width="667" height="1000" loading="lazy" data-slot="photo-badminton-05">
+        <figcaption><span class="tag">活動紀錄</span><b>羽動傑人盃 · 起跳</b>球拍高舉、羽球在空中</figcaption>
+      </figure>
+      <figure class="gal-item rise" data-cap="活動紀錄 · 第二屆羽動傑人盃：紅衣選手騰空扣殺">
+        <img src="images/photo-badminton-09.webp" alt="紅色無袖上衣選手騰空扣殺，藍白球衣選手在右前方" width="1000" height="667" loading="lazy" data-slot="photo-badminton-09">
+        <figcaption><span class="tag">活動紀錄</span><b>羽動傑人盃 · 扣殺</b>騰空而起的決定性一擊</figcaption>
+      </figure>
+      <figure class="gal-item rise" data-cap="活動紀錄 · 第二屆羽動傑人盃：兩名紅衣少年選手對打">
+        <img src="images/photo-badminton-10.webp" alt="兩名穿紅衣的少年選手，前者揮拍、後者在後方備戰" width="1000" height="667" loading="lazy" data-slot="photo-badminton-10">
+        <figcaption><span class="tag">活動紀錄</span><b>羽動傑人盃 · 對打</b>前後呼應的雙人構圖</figcaption>
+      </figure>
+      <figure class="gal-item rise" data-cap="活動紀錄 · 第二屆羽動傑人盃：頒獎合照，選手們手持獎狀與紅包">
+        <img src="images/photo-badminton-04.webp" alt="頒獎合照：七人手持獎狀與紅包，中央選手比讚，後方橫幅寫著第二屆羽動傑人盃" width="1000" height="667" loading="lazy" data-slot="photo-badminton-04">
+        <figcaption><span class="tag">活動紀錄</span><b>羽動傑人盃 · 頒獎</b>手持獎狀與紅包的合影</figcaption>
+      </figure>
+      <figure class="gal-item rise" data-cap="人像創作 · 粉紅長髮女子棚拍，藍色西裝外套，紫藍背景">
+        <img src="images/photo-creative-portrait.webp" alt="粉紅長髮女子穿藍色西裝外套，在紫藍棚拍背景前手持扇形卡片" width="512" height="640" loading="lazy" data-slot="photo-creative-portrait" style="object-position:50% 12%">
+        <figcaption><span class="tag">人像創作</span><b>棚拍 · 粉紅髮女子</b>色彩對比強烈的創意人像（IG 作品）</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="paper" id="media">
+  <div class="wrap">
+    <p class="kicker rise">媒體與活動</p>
+    <h2 class="sec-title rise">被看見的時刻</h2>
+    <div class="media-layout">
+      <figure class="about-img rise">
+        <img src="images/IMG-007.webp" alt="概念圖：暗房裡，照片掛在繩上，放大機投出一道暖金色光束" width="1000" height="667" loading="lazy" data-slot="IMG-007">
+        <figcaption>概念圖 · 暗房裡的影像誕生</figcaption>
+      </figure>
+      <ul class="media-list">
+        <li class="media-item rise">
+          <p class="src">經濟日報 · 旺得富理財網 — 2025 年 11 月</p>
+          <h3>2025 台中市區產業博覽會</h3>
+          <p>BNI 台中市區辦公室主辦、於台中世貿舉辦的產業博覽會，攝氏零度影像設計列名參展廠商，獲媒體報導。</p>
+        </li>
+        <li class="media-item rise">
+          <p class="src">BNI 威鋒分會 INSTAGRAM — 2026 年 1 月</p>
+          <h3>寵物寫真專題演講</h3>
+          <p>「把陪伴，變成永遠保存的模樣。」一場關於溫度與影像的深度對談，賴耀嘉以人像攝影代表身分主講。</p>
+          <a class="more" href="https://www.instagram.com/p/DTwIe8GErqj/" target="_blank" rel="noopener">看活動貼文 →</a>
+        </li>
+        <li class="media-item rise">
+          <p class="src">FB 粉絲專頁 — 2026 年 8 月</p>
+          <h3>第二屆羽動傑人盃活動紀錄</h3>
+          <p>台中市時代青年國際傑人會羽球賽事，攝氏零度影像設計全程紀錄，發表 28 張以上賽事照片。</p>
+          <a class="more" href="https://www.facebook.com/jameslai0709" target="_blank" rel="noopener">看粉絲專頁 →</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="kicker rise">聯絡</p>
+    <h2 class="sec-title rise">檔期與合作，請私訊粉專</h2>
+    <p class="sec-sub rise">作品集與聯繫檔期，都在 FB 粉絲專頁。商業攝影、活動紀錄、人像與寵物寫真，歡迎洽詢。</p>
+    <div class="contact-btns rise">
+      <a class="btn btn-gold" href="https://www.facebook.com/jameslai0709" target="_blank" rel="noopener">FB 粉絲專頁</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/jameslai0709/" target="_blank" rel="noopener">IG 作品集</a>
+      <a class="btn btn-ghost" href="mailto:porsche9592turbo@gmail.com">寫信給耀嘉</a>
+    </div>
+    <div class="contact-info">
+      <div class="cinfo rise">
+        <h3>服務範圍</h3>
+        <p>台中地區。曾於豐原朝暮良辰婚宴會館等場地，拍攝大型活動。</p>
+      </div>
+      <div class="cinfo rise">
+        <h3>公司登記地址</h3>
+        <p>台中市霧峰區吉峰里中正路 1267 號之 8</p>
+      </div>
+      <div class="cinfo rise">
+        <h3>電子郵件</h3>
+        <p><a href="mailto:porsche9592turbo@gmail.com">porsche9592turbo@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="zero-mark rise"><b>0°</b>攝氏零度 · 把瞬間凝結成永恆</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://www.tava-ai.com/" target="_blank" rel="noopener">本網頁由 TAVA AI 製作</a>
+      <a href="https://www.bymyway.com/" target="_blank" rel="noopener">出品人 大樹教練</a>
+      <a href="https://event.bymyway.com/curated/rongtree/" target="_blank" rel="noopener">友善連結 榮樹下</a>
+      <a href="https://event.bymyway.com/curated/skyteam/" target="_blank" rel="noopener">顧問師天團・人才軍火庫</a>
+    </div>
+    <p class="foot-copy">© 2026 賴耀嘉 · 攝氏零度影像設計</p>
+  </div>
+</footer>
+
+<div class="dots" id="dots" aria-hidden="true">
+  <a href="#about" data-nav aria-label="關於"></a>
+  <a href="#services" data-nav aria-label="專長"></a>
+  <a href="#story" data-nav aria-label="故事"></a>
+  <a href="#works" data-nav aria-label="作品"></a>
+  <a href="#media" data-nav aria-label="媒體"></a>
+  <a href="#contact" data-nav aria-label="聯絡"></a>
+</div>
+<button class="to-top" id="toTop" aria-label="回到頂端">↑</button>
+<button class="pen-fab" id="penFab">🖊 簡報筆</button>
+<canvas id="penCanvas"></canvas>
+<div class="pen-bar" id="penBar">
+  <button id="penClear" type="button">清除筆跡</button>
+  <button id="penExit" type="button">結束簡報筆</button>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="作品放大檢視">
+  <p class="lb-count" id="lbCount"></p>
+  <button class="lb-close" id="lbClose" aria-label="關閉">✕</button>
+  <img id="lbImg" src="" alt="">
+  <p class="lb-cap" id="lbCap"></p>
+  <div class="lb-btns">
+    <button id="lbPrev" aria-label="上一張">‹</button>
+    <button id="lbNext" aria-label="下一張">›</button>
+  </div>
+</div>
+<script>
+(function(){
+  "use strict";
+  var $ = function(s, c){ return (c||document).querySelector(s); };
+  var $$ = function(s, c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); };
+
+  /* burger */
+  var burger = $("#burger"), navLinks = $("#navLinks");
+  burger.addEventListener("click", function(){
+    var open = navLinks.classList.toggle("open");
+    burger.textContent = open ? "✕" : "☰";
+  });
+
+  /* curtain transition for in-page nav */
+  var curtain = $("#curtain"), navBusy = false;
+  $$("[data-nav]").forEach(function(a){
+    a.addEventListener("click", function(e){
+      var href = a.getAttribute("href");
+      if(!href || href.charAt(0) !== "#") return;
+      var target = href === "#top" ? document.body : $(href);
+      if(!target) return;
+      e.preventDefault();
+      if(navBusy) return;
+      navBusy = true;
+      navLinks.classList.remove("open"); burger.textContent = "☰";
+      curtain.classList.remove("go"); void curtain.offsetWidth; curtain.classList.add("go");
+      setTimeout(function(){
+        if(href === "#top"){ window.scrollTo({top:0, behavior:"auto"}); }
+        else { target.scrollIntoView({behavior:"auto"}); }
+        history.replaceState(null, "", href);
+        setTimeout(function(){ navBusy = false; }, 380);
+      }, 330);
+    });
+  });
+
+  /* counters */
+  var counters = $$(".count");
+  var cObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var el = en.target; cObs.unobserve(el);
+      var from = parseInt(el.getAttribute("data-from"), 10) || 0;
+      var to = parseInt(el.getAttribute("data-to"), 10) || 0;
+      var t0 = null, dur = 1100;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(from + (to - from) * eased);
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }, {threshold:.6});
+  counters.forEach(function(c){ cObs.observe(c); });
+
+  /* rise-in */
+  var rObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add("on"); rObs.unobserve(en.target); }
+    });
+  }, {threshold:.12});
+  $$(".rise").forEach(function(el){ rObs.observe(el); });
+
+  /* timeline */
+  var tObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add("on"); }
+    });
+  }, {threshold:.35});
+  $$(".tl-item").forEach(function(el){ tObs.observe(el); });
+
+  /* hero shrink on scroll */
+  var vfFrame = $("#vfFrame"), ticking = false;
+  function onScroll(){
+    var y = window.scrollY || 0;
+    var s = Math.max(0.94, 1 - Math.min(y, 600) / 600 * 0.06);
+    vfFrame.style.transform = "scale(" + s.toFixed(4) + ")";
+    toTop.classList.toggle("show", y > 600);
+    ticking = false;
+  }
+  window.addEventListener("scroll", function(){
+    if(!ticking){ ticking = true; requestAnimationFrame(onScroll); }
+  }, {passive:true});
+
+  /* laser card */
+  var notes = [
+    {t:"1 · 凝結的瞬間", p:"羽球與球拍接觸的那一刻，快門把它永遠留住。高速快門下，連球拍的線都清清楚楚。"},
+    {t:"2 · 追焦的動態", p:"選手騰空扣殺，身體的每一條線都充滿力量。追著動作跑，焦點始終跟著人。"},
+    {t:"3 · 現場光線", p:"體育館的頂光直白又硬，靠曝光判斷，留住膚色與球衣的層次。"},
+    {t:"4 · 構圖留白", p:"觀眾席與球場的空間，讓主角有地方「動」。畫面不擠，故事才有呼吸。"}
+  ];
+  var laserNote = $("#laserNote");
+  function showNote(i){
+    laserNote.innerHTML = "<b>" + notes[i].t + "</b><p>" + notes[i].p + "</p>" +
+      "<p class='src'>照片來源：第二屆羽動傑人盃活動紀錄（FB 粉絲專頁，2026 年 8 月）</p>";
+    $$(".hotspot").forEach(function(h, j){ h.classList.toggle("active", j === i); });
+  }
+  $$(".hotspot").forEach(function(h){
+    h.addEventListener("click", function(){ showNote(parseInt(h.getAttribute("data-note"), 10)); });
+  });
+  showNote(0);
+
+  /* lightbox */
+  var items = $$(".gal-item");
+  var lb = $("#lightbox"), lbImg = $("#lbImg"), lbCap = $("#lbCap"), lbCount = $("#lbCount");
+  var cur = 0;
+  function openLb(i){
+    cur = (i + items.length) % items.length;
+    var img = items[cur].querySelector("img");
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    lbCap.textContent = items[cur].getAttribute("data-cap") || "";
+    lbCount.textContent = (cur + 1) + " / " + items.length;
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLb(){
+    lb.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+  items.forEach(function(it, i){
+    it.addEventListener("click", function(){ openLb(i); });
+  });
+  $("#lbClose").addEventListener("click", closeLb);
+  $("#lbPrev").addEventListener("click", function(e){ e.stopPropagation(); openLb(cur - 1); });
+  $("#lbNext").addEventListener("click", function(e){ e.stopPropagation(); openLb(cur + 1); });
+  lb.addEventListener("click", function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if(!lb.classList.contains("open")) return;
+    if(e.key === "Escape") closeLb();
+    if(e.key === "ArrowLeft") openLb(cur - 1);
+    if(e.key === "ArrowRight") openLb(cur + 1);
+  });
+
+  /* scrollspy dots */
+  var dotMap = {};
+  $$("#dots a").forEach(function(a){ dotMap[a.getAttribute("href").slice(1)] = a; });
+  var sObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        $$("#dots a").forEach(function(a){ a.classList.remove("on"); });
+        var d = dotMap[en.target.id];
+        if(d) d.classList.add("on");
+      }
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  ["about","services","story","works","media","contact"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) sObs.observe(el);
+  });
+
+  /* back to top */
+  var toTop = $("#toTop");
+  toTop.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+
+  /* presenter pen */
+  var canvas = $("#penCanvas"), ctx = canvas.getContext("2d");
+  var penBar = $("#penBar"), penFab = $("#penFab"), drawing = false, last = null;
+  function sizeCanvas(){
+    canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  }
+  sizeCanvas();
+  window.addEventListener("resize", sizeCanvas);
+  function penOn(){
+    canvas.classList.add("on"); penBar.classList.add("on");
+    document.body.style.overflow = "hidden";
+  }
+  function penOff(){
+    canvas.classList.remove("on"); penBar.classList.remove("on");
+    document.body.style.overflow = "";
+  }
+  penFab.addEventListener("click", penOn);
+  $("#penExit").addEventListener("click", penOff);
+  $("#penClear").addEventListener("click", function(){ ctx.clearRect(0, 0, canvas.width, canvas.height); });
+  function pos(e){
+    var r = canvas.getBoundingClientRect();
+    return {x: e.clientX - r.left, y: e.clientY - r.top};
+  }
+  canvas.addEventListener("pointerdown", function(e){
+    drawing = true; last = pos(e);
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener("pointermove", function(e){
+    if(!drawing) return;
+    var p = pos(e);
+    ctx.strokeStyle = "#eec97a"; ctx.lineWidth = 4; ctx.lineCap = "round"; ctx.lineJoin = "round";
+    ctx.beginPath(); ctx.moveTo(last.x, last.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+    last = p;
+  });
+  ["pointerup","pointercancel"].forEach(function(ev){
+    canvas.addEventListener(ev, function(){ drawing = false; last = null; });
+  });
+})();
+</script>
+</body>
+</html>
